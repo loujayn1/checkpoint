@@ -1,0 +1,33 @@
+ALGORITHM test
+VAR
+    ch:STRING;
+    i:INTEGER;
+    N:INTEGER;
+    count:INTEGER:=1;
+    j:INTEGER:=0;
+
+BEGIN
+    ch="GO MY CODE.";
+    read(ch)
+    N:=length(ch)-1;
+    FOR i FROM 0 TO N  DO
+        IF (ch[i]=" ") THEN
+        count:=count+1;
+        END_IF
+
+        IF (ch[i].toUpperCase()=="A"
+         || ch[i].toUpperCase()=="E"
+         || ch[i].toUpperCase()== "I",
+         || ch[i].toUpperCase() == "O",
+         ||ch[i].toUpperCase() == "Y",
+         ||ch[i].toUpperCase()=="W") THEN 
+         j:=j+1;
+         END_IF
+
+    write(j);
+    write(count);
+    END_FOR 
+    
+      
+     
+END
